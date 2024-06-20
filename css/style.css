@@ -1,0 +1,23 @@
+body {
+   background-image: url(../img/colores\ fondo.png); 
+   width: 100%;
+   height: 100%;   
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: aliceblue;
+             
+}
+
+.links{
+    text-decoration: none;
+    color: darkorange;
+    
+}
+
+.links:hover{
+    color: gold;
+    cursor: pointer;
+
+}
