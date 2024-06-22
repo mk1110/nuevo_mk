@@ -9,15 +9,42 @@ body {
     color: aliceblue;
              
 }
-
-.links{
-    text-decoration: none;
-    color: darkorange;
-    
+.conteiner {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botones {
+    display: flex;
+    flex-direction: column;
 }
 
-.links:hover{
-    color: gold;
-    cursor: pointer;
+.bot-1{
+    text-decoration: none;
+    padding: 20px 50px;
+    font-size: 1rem;
+    position: relative;
+    margin: 15px;
 
+    color: aliceblue;
+}
+
+.bot-1::after, .bot-1::before {
+    border: 3px solid #ea8410;
+    content: "";
+    position: absolute;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.4s ease;
+}
+
+.bot-1:hover::after{
+    transform: translate(-5px,-5px);
+}
+.bot-1:hover::before{
+    transform: translate(5px,5px);
 }

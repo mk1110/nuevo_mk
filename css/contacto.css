@@ -1,0 +1,19 @@
+body {
+    background-image: url(../img/colores\ fondo.png); 
+    width: 100%;
+    height: 100%;   
+     font-family: "Source Code Pro", monospace;
+     font-optical-sizing: auto;
+     font-weight: weight;
+     font-style: normal;
+     color: aliceblue;}
+
+
+.form{
+    width: auto;
+    height: auto;
+   border: 3px solid red;
+   align-items: center;
+   text-align: center;
+   display: block;
+}
