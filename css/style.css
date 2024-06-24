@@ -48,3 +48,7 @@ body {
 .bot-1:hover::before{
     transform: translate(5px,5px);
 }
+
+.image{
+    
+}
