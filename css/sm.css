@@ -1,0 +1,29 @@
+body {
+    background-image: url(../img/colores\ fondo.png); 
+    width: 100%;
+    height: 100%;   
+     font-family: "Source Code Pro", monospace;
+     font-optical-sizing: auto;
+     font-weight: weight;
+     font-style: normal;
+     color: aliceblue;
+              
+ }
+
+ .redes {
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+
+}
+
+.facebook, .instagram, .github{
+    padding-right: 15px;
+    
+}
+
+.img{
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+}
