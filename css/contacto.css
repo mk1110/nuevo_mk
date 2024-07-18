@@ -12,10 +12,12 @@ body {
 .form{
     width: 450px;
     height: 450px;
-   border: 20px solid;
-   align-items: center;
-   text-align: center;
-   display: flex;
+    border: 10px solid;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-left: 35%;
+    
 }
 
 .inputs{
@@ -23,16 +25,35 @@ body {
     display: flex;
     width: 250px;
     height: 40px;
-    border-radius: 30px;
+    border-radius: 25px;
     margin-left: 100px;
     
     
 }
 
 .button{
-    border-radius: 25px;
-    margin-top: 40px;
-    color: rgb(192, 210, 30);
-    background-color:black;
-    display: inline-block;
+    
+    
+    align-items: center;
+    color: rgb(212, 209, 208);
+    background-color: orange;
+    padding: auto;
+    margin-top: 1rem;
+}
+.button:hover{
+    background-color: rgb(208, 15, 153);
+    cursor: pointer;
+}
+h1,h2{
+    text-align: center;
+}
+
+.redes{
+    display: flex;
+    padding: 2rem;
+    justify-content: end;
+}
+.facebook, .instagram, .github{
+    padding-right: 15px;
+    
 }
