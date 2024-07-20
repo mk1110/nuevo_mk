@@ -1,65 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sobre mi</title>
     <script
-    src="https://kit.fontawesome.com/3c809bfe13.js"
-    crossorigin="anonymous"
-  ></script>
+      src="https://kit.fontawesome.com/3c809bfe13.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/sm.css">
-    
-</head>
-<body>
+    <link rel="stylesheet" href="./css/sm.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  </head>
+  <body>
     <header>
-        <h1>Sobre mi</h1>
-        <div class="redes">
-          <div class="facebook">
-            <a
-              href="https://www.facebook.com/profile.php?id=100088914865084&locale=es_LA"
-              style="color: aliceblue"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-          </div>
-          <div class="github">
-            <a href="https://github.com/mk1110"
-              ><i class="fa-brands fa-github" style="color: aliceblue"></i
-            ></a>
-          </div>
-          <div class="instagram">
-            <a href="https://www.instagram.com/aballaymariano1110/"
-              ><i class="fa-brands fa-instagram" style="color: aliceblue"></i
-            ></a>
-          </div>
-          <div class="home">
-            <a href="index.html"
-              ><i class="fa-solid fa-house" style="color: aliceblue"></i
-            ></a>
-          </div>
+      <h1>Sobre mi</h1>
+      <div class="redes">
+        <div class="facebook">
+          <a
+            href="https://www.facebook.com/profile.php?id=100088914865084&locale=es_LA"
+            style="color: aliceblue"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
         </div>
-      </header>
-      <main>
-        <div id="app">
-          <h2>{{saludo}}</h2>
-          <img src="img/fotomia.jpg" alt="foto" class="img">
-          <p>Mi nombre es {{nombre}} {{apellido}}, actualmente resido en la provincia de {{provincia}} actualmente tengo {{edad}} años</p>
-          <p>Tengo conocimientos en: </p>
+        <div class="github">
+          <a href="https://github.com/mk1110"
+            ><i class="fa-brands fa-github" style="color: aliceblue"></i
+          ></a>
+        </div>
+        <div class="instagram">
+          <a href="https://www.instagram.com/aballaymariano1110/"
+            ><i class="fa-brands fa-instagram" style="color: aliceblue"></i
+          ></a>
+        </div>
+        <div class="home">
+          <a href="index.html"
+            ><i class="fa-solid fa-house" style="color: aliceblue"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="app">
+        <h2>{{saludo}}</h2>
+        <div class="img">
+          <img src="img/fotomia.jpg" alt="foto" class="img" />
+        </div>
+        <div class="contenido">
+          <p>
+            Mi nombre es {{nombre}} {{apellido}}, actualmente resido en la
+            provincia de {{provincia}} actualmente tengo {{edad}} años
+          </p>
+          <p>Tengo conocimientos en:</p>
           <ul id="app">
-            <li v-for="tec in tecnologias">
-              {{ tec }}
-            </li>
+            <li v-for="tec in tecnologias">{{ tec }}</li>
           </ul>
         </div>
-       
-      </main>
-      <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-      <script src="vue.js"></script>
-</body>
+      </div>
+    </main>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="vue.js"></script>
+  </body>
+  <footer>
+    <p>Todos los derechos reservados</p>
+    <p>Para contactarme pueden hacerlo en la solapa de contacto o a mi email mk1110aballay@gmail.com</p>
+  </footer>
 </html>
