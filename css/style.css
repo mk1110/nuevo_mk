@@ -80,3 +80,6 @@ body {
 h1, h2 {
     text-align: center;
 }
+.nuevo{
+    display:  none;
+}
