@@ -48,30 +48,32 @@
     </header>
 
     <main>
-        <h2>Contactame</h2>
+        <h2>Contactame 😊</h2>
       <div class="form">
-        <form action="">
+        <form id="miFormulario" action="">
           
           <div>
             <label>Nombre: </label
-            ><input type="text" class="inputs" />
+            ><input id="nombre" type="text" class="inputs" required />
           </div>
           <div>
             <label>Email: </label
             ><input
+              id="email"
               type="email"
               placeholder="ejemplo@algo.com"
-              class="inputs"
+              class="inputs" required
             />
           </div>
           <div>
             <label>Mensaje: </label
-            ><textarea name="mensaje" id="msj" class="inputs"></textarea>
+            ><textarea name="mensaje" id="mensaje" class="inputs"></textarea>
           </div>
           <div><button type="submit" class="button"onckick="">Enviar</button></div>
         </form>
         
       </div>
+      <script src="formulario.js"></script>
     </main>
     <footer>
       <p>Siempre atento a cualquier comentario o mensaje :D</p>
