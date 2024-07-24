@@ -36,3 +36,4 @@ formulario.addEventListener('submit', (event) => {
   // Opcional: Limpiar el formulario
   formulario.reset();
 });
+
