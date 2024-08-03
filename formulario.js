@@ -1,5 +1,5 @@
 // Archivo: guardar-datos-formulario.js
-
+let datos = {}
 // Seleccionar el formulario
 const formulario = document.getElementById('miFormulario');
 
@@ -36,4 +36,41 @@ formulario.addEventListener('submit', (event) => {
   // Opcional: Limpiar el formulario
   formulario.reset();
 });
+
+// fetch('/api/comentarios', {
+//   method: 'POST',
+//   headers: {
+//     'Content-Type': 'application/json'
+//   },
+//   body: JSON.stringify(datos)
+// })
+// .then(response => response.json())
+// .then(datos => {
+//   console.log('Comentario creado:', datos);
+//   // Actualizar la lista de comentarios
+//   obtenerComentarios();
+// })
+// .catch(error => {
+//   console.error('Error:', error);
+// });
+
+
+// function obtenerComentarios() {
+// fetch('./api/comentarios')
+// .then(response => response.json())
+// .then(data => {
+//   resultadosDiv.innerHTML = '';
+//   data.forEach(comentario => {
+//     const p = document.createElement('p');
+//     p.textContent = `${comentario.nombre}: ${comentario.comentario}`;
+//     resultadosDiv.appendChild(p);
+//   });
+// })
+// .catch(error => {
+//   console.error('Error:', error);
+// });
+// }
+
+// // Llama a obtenerComentarios() al cargar la página para mostrar los comentarios iniciales
+// obtenerComentarios();
 

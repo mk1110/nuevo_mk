@@ -7,7 +7,7 @@ createApp({
  apellido:'Aballay',
  provincia:'San Juan',
  edad: '31',
- tecnologias:['HTML', 'CSS', 'JAVASCRIPT', 'PYTHON','MYSQL','VUE','GIT','GITHub']
+ tecnologias:['HTML', 'CSS', 'JAVASCRIPT', 'PYTHON','MYSQL','VUE','GIT','GITHub','FAMEWORK ASTRO']
  }
  }
 }).mount('#app')
