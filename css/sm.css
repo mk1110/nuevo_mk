@@ -72,4 +72,11 @@ a{
     color: orangered;
 }
 
+footer{
+    margin-top: 1rem;
+    text-align: center;
+    border: 3px solid coral;
+    width: 100%;
+    height: 100%;
+}
 

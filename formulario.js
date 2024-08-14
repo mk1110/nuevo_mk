@@ -37,6 +37,33 @@ formulario.addEventListener('submit', (event) => {
   formulario.reset();
 });
 
+// Evento para manejar el envío del formulario
+formulario.addEventListener('submit', async (event) => {
+  event.preventDefault(); // Evitar el envío por defecto del formulario
+
+  const datos = obtenerDatosFormulario();
+
+  try {
+    const response = await fetch('http://127.0.0.1:5000/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(datos)
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    } else {
+      console.log('Datos enviados exitosamente.');
+      formulario.reset(); // Limpiar el formulario
+    }
+  } catch (error) {
+    console.error('Error al enviar los datos:', error);
+  }
+});
+
+
 // fetch('/api/comentarios', {
 //   method: 'POST',
 //   headers: {

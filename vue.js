@@ -3,7 +3,7 @@ createApp({
  data() {
  return {
  saludo: 'Hola a Todos!!!',
- nombre: 'Kevin',
+ nombre: 'Mariano Kevin',
  apellido:'Aballay',
  provincia:'San Juan',
  edad: '31',
